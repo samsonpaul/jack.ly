@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jack Pearkes</title>
+    <link href="/static/main.css" rel="stylesheet" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inika:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <div class="container">
+        <div class="row">
+        {% include "includes/sidebar.html" %}
+
+        {% block content %}
+        {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
