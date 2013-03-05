@@ -16,9 +16,9 @@ def generate_cache():
     # Glob the section directory
     # Clean up the section names and cache them
     # Glob each section to get a list of the entries
-    # Fix up the entry titles and build the paths
-    # Render the markdown to html for each entry
-    # Place the entry data in the cache for it's section
+    # Fix up the item titles and build the paths
+    # Render the markdown to html for each item
+    # Place the item data in the cache for it's section
     # You're done!
     pass
 
@@ -32,7 +32,7 @@ def retrieve_section():
 
 
 def retrieve_item():
-    "Returns a section we grabbed from the cache."
+    "Returns an item we grabbed from the cache."
     pass
 
 

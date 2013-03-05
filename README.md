@@ -35,23 +35,23 @@ as the section name.*
     path: The relative path to access the section through the web server.
 
 
-## Entry
+## Item
 
-Sections are flexible, and simply have something called an "entry".
+Sections are flexible, and simply have something called an "item".
 
 Entries for a section can be created by placing a markdown file in the
-section it belongs to. Each entry should be named according to it's title.
+section it belongs to. Each item should be named according to it's title.
 
-*Note: Entry files with dashes will automatically be replaced with spaces
-as the entry name.*
+*Note: Item files with dashes will automatically be replaced with spaces
+as the item name.*
 
 By default, all entries will be rendered in alphabetical order.
 
 Attributes:
 
-    name: A human readable name of the entry.
-    filename: The filename of the entry file.
-    path: The relative path to access the entry through the web server.
+    name: A human readable name of the item.
+    filename: The filename of the item file.
+    path: The relative path to access the item through the web server.
 
 ## Retrieving and Displaying
 
@@ -64,8 +64,8 @@ In templates, you can access it like this:
 
     <h1>{{ section.name }}</h2
     <ul>
-    {% for entry in section.entries %}
-        <li><a href="{{ entry.path }}">{{ entry.name }}</a></li>
+    {% for item in section.entries %}
+        <li><a href="{{ item.path }}">{{ item.name }}</a></li>
     {% endfor%}
     </ul>
 
