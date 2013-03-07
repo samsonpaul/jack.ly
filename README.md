@@ -19,8 +19,8 @@ Most websites have different sections. In this case, a section
 is both a directory and a route.
 
 You can create as many sections as you want. All sections are stored
-in a dictionary with all of the posts for each section. Because of this,
-it's easy to retrieve both a list of sections and the posts for that
+in a dictionary with all of the items for each section. Because of this,
+it's easy to retrieve both a list of sections and the items for that
 section.
 
 To create a section, simply place a directory in the `sections` directory,
@@ -31,7 +31,7 @@ as the section name.*
 
     name: A human readable name of the section.
     filename: The filename of the section directory.
-    entries: A list of entries associated with the section.
+    items: A list of items associated with the section.
     path: The relative path to access the section through the web server.
 
 
@@ -39,13 +39,13 @@ as the section name.*
 
 Sections are flexible, and simply have something called an "item".
 
-Entries for a section can be created by placing a markdown file in the
+Items for a section can be created by placing a markdown file in the
 section it belongs to. Each item should be named according to it's title.
 
 *Note: Item files with dashes will automatically be replaced with spaces
 as the item name.*
 
-By default, all entries will be rendered in alphabetical order.
+By default, all items will be rendered in alphabetical order.
 
 Attributes:
 
@@ -64,7 +64,7 @@ In templates, you can access it like this:
 
     <h1>{{ section.name }}</h2
     <ul>
-    {% for item in section.entries %}
+    {% for item in section.items %}
         <li><a href="{{ item.path }}">{{ item.name }}</a></li>
     {% endfor%}
     </ul>
