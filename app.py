@@ -5,12 +5,17 @@ and content addition. See github.com/pearkes/jack.ly for more.
 import os
 import glob
 import markdown2
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 
 DEFAULT_SECTION = 'technical-projects'
 
 # Main app and configuration
 app = Flask(__name__)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 
 def list_sections():
@@ -69,17 +74,22 @@ def generate_cache():
 
 
 cache = generate_cache()  # Kicking it new school
-print cache
 
 
-def retrieve_section():
+def retrieve_section(id):
     "Returns a section we grabbed from the cache."
-    pass
+    return cache.get(id)
 
 
-def retrieve_item():
+def retrieve_item(section, id):
     "Returns an item we grabbed from the cache."
-    pass
+    s = retrieve_section(section)
+    if not s:
+        return
+    # Performance concerns with large lists.
+    for item in s['items']:
+        if item.filename == id:
+            return item
 
 
 @app.route('/')
@@ -93,6 +103,8 @@ def index():
 def section(section):
     "Looks up a section based on it's name and renders it."
     section = retrieve_section(section)
+    if not section:
+        abort(404)
     return render_template('section.html', section=section)
 
 
@@ -100,10 +112,12 @@ def section(section):
 def item(item):
     "Looks up an item based on it's name and section and renders it."
     item = retrieve_item(section, item)
+    if not item:
+        abort(404)
     return render_template('item.html', section=section, item=item)
 
 
 if __name__ == '__main__':
     # Bind to PORT if defined in the environment, otherwise default to 5000.
     port = os.environ.get('PORT', 5000)
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=True)
