@@ -1,9 +1,10 @@
+{% extends 'base.html' %}
 {% block content %}
 <div class="span6 offset1 section">
 {% for item in section['items'] %}
     <div class="span6 item">
-        NAME: {{ item['name'] }}
-        HTML: {{ item['html'] | safe}}
+        <h2><a href="{{ item['path'] }}">{{ item['name'] }}</a></h2>
+        {{ item['html'] | safe}}
     </div>
 {% endfor %}
 </div>

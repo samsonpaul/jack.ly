@@ -1,11 +1,4 @@
-# This is the Test page.
+I like talking about myself, so I wrote some stuff about me.
 
-## Subheading what!
-
-*Lots of good stuff here.*
-
-Just like this:
-
-- tube
-- tubers
-- tubez
+This is more stuff about me, including some [links](http://google.com)
+to places on the internet.

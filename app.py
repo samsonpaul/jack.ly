@@ -54,6 +54,7 @@ def generate_cache():
     # The cache we are building.
     cache = {}
     sections = list_sections()
+
     for section in sections:
         cache[section] = {'name': human_name(section),
                           'filename': section,
@@ -62,18 +63,24 @@ def generate_cache():
 
         # Get all the items for each section.
         items = list_items(section)
+
         # Generate HTML from markdown files.
         for item in items:
-            filename = item.split('/')[-1]
+            filename = item.split('/')[-1].split('.')[0]
             item_cache = {'name': human_name(filename),
                           'filename': filename,
                           'path': build_path(filename, section),
                           'html': markdown2.markdown_path(item)}
             cache[section]['items'].append(item_cache)
+
+    print "Cache succesfully generated with %s sections." % len(sections)
     return cache
 
 
-cache = generate_cache()  # Kicking it new school
+def retrieve_sections():
+    "Returns an array of all sections and their dicts."
+    sections = list(cache.itervalues())
+    return sections
 
 
 def retrieve_section(id):
@@ -88,7 +95,7 @@ def retrieve_item(section, id):
         return
     # Performance concerns with large lists.
     for item in s['items']:
-        if item.filename == id:
+        if item['filename'] == id:
             return item
 
 
@@ -96,7 +103,8 @@ def retrieve_item(section, id):
 def index():
     "The homepage. Renders a default section."
     section = retrieve_section(DEFAULT_SECTION)
-    return render_template('section.html', section=section)
+    return render_template('section.html', sections=retrieve_sections(),
+                           section=section)
 
 
 @app.route('/<section>')
@@ -105,19 +113,22 @@ def section(section):
     section = retrieve_section(section)
     if not section:
         abort(404)
-    return render_template('section.html', section=section)
+    return render_template('section.html', sections=retrieve_sections(),
+                           section=section)
 
 
 @app.route('/<section>/<item>')
-def item(item):
+def item(section, item):
     "Looks up an item based on it's name and section and renders it."
     item = retrieve_item(section, item)
     if not item:
         abort(404)
-    return render_template('item.html', section=section, item=item)
+    return render_template('item.html', sections=retrieve_sections(),
+                           section=section, item=item)
 
 
 if __name__ == '__main__':
     # Bind to PORT if defined in the environment, otherwise default to 5000.
+    cache = generate_cache()  # Kicking it new school
     port = os.environ.get('PORT', 5000)
     app.run(host='0.0.0.0', port=port, debug=True)
