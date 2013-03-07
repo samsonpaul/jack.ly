@@ -52,6 +52,7 @@ Attributes:
     name: A human readable name of the item.
     filename: The filename of the item file.
     path: The relative path to access the item through the web server.
+    html: The HTML content of the item.
 
 ## Retrieving and Displaying
 

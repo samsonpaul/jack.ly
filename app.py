@@ -3,6 +3,8 @@ Jack Pearkes' personal website, designed for simple maintenance
 and content addition. See github.com/pearkes/jack.ly for more.
 """
 import os
+import glob
+import markdown2
 from flask import Flask, render_template
 
 DEFAULT_SECTION = 'technical-projects'
@@ -11,19 +13,63 @@ DEFAULT_SECTION = 'technical-projects'
 app = Flask(__name__)
 
 
+def list_sections():
+    "Returns a list of sections from the filesystem."
+    listed_sections = os.listdir('sections/')
+    sections = [s for s in listed_sections if not s.startswith('.')]
+    return sections
+
+
+def list_items(section):
+    "Returns a list of items from the filesystem."
+    listed_items = glob.glob('sections/%s/*.md' % section)
+    return listed_items
+
+
+def human_name(filename):
+    "Makes a filename human readable and returns it as a string."
+    name = filename.replace('-', ' ')
+    name = name.split('.')[0]
+    name = name.title()
+    return name
+
+
+def build_path(filename, section=None):
+    "Makes a path relative and returns it as a string."
+    if section:
+        path = "/%s/%s" % (section, filename)
+    else:
+        path = "/%s" % (filename)
+    return path
+
+
 def generate_cache():
     "Generates the cache of the sections and their entries."
-    # Glob the section directory
-    # Clean up the section names and cache them
-    # Glob each section to get a list of the entries
-    # Fix up the item titles and build the paths
-    # Render the markdown to html for each item
-    # Place the item data in the cache for it's section
-    # You're done!
-    pass
+    print "Generating cache..."
+    # The cache we are building.
+    cache = {}
+    sections = list_sections()
+    for section in sections:
+        cache[section] = {'name': human_name(section),
+                          'filename': section,
+                          'path': build_path(section),
+                          'items': []}
+
+        # Get all the items for each section.
+        items = list_items(section)
+        # Generate HTML from markdown files.
+        for item in items:
+            filename = item.split('/')[-1]
+            item_cache = {'name': human_name(filename),
+                          'filename': filename,
+                          'path': build_path(filename, section),
+                          'html': markdown2.markdown_path(item)}
+            cache[section]['items'].append(item_cache)
+    return cache
 
 
 cache = generate_cache()  # Kicking it new school
+print cache
 
 
 def retrieve_section():
