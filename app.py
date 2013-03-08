@@ -7,7 +7,7 @@ import glob
 import markdown2
 from flask import Flask, render_template, abort
 
-DEFAULT_SECTION = 'technical-projects'
+DEFAULT_SECTION = 'about-me'
 
 # Main app and configuration
 app = Flask(__name__)
@@ -22,9 +22,7 @@ def list_sections():
     "Returns a list of sections from the filesystem."
     listed_sections = os.listdir('sections/')
     sections = [s for s in listed_sections if not s.startswith('.')]
-    print sections
     sections.sort()
-    print sections
     return sections
 
 

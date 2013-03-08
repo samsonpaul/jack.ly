@@ -34,7 +34,7 @@ var locationChecker = {
                 updateLocation(json)
             }
         }
-$.getJSON('http://computer-location.herokuapp.com/current-location', getResponse)
+        $.getJSON('http://computer-location.herokuapp.com/current-location', getResponse)
     },
 
 

@@ -1,11 +1,11 @@
-<div class="span3 offset1">
+<div class="span3 offset1 sidebar">
     <h1><a href="/">Jack Pearkes</a></h1>
-    <p>This website seeks to represent the the work I commit myself to and the things I create.</p>
+    <p>This website gives you an overview of who I am and the work I commit myself to.</p>
     <ul class="menu">
-        {% for section in sections %}
-        <li class="{% if section['filename'] == request.path.split('/')[1] %}active{% endif %}"><a href="{{ section['path'] }}">{{ section['name'] }}</a></li>
+        {% for s in sections %}
+        <li class="{% if s['filename'] == section['filename'] %}active{% endif %}"><a href="{{ s['path'] }}">{{ s['name'] }}</a></li>
         {% endfor %}
     </ul>
-    <p class="note">I am best reached via email at <a href="mailto:jackpearkes@gmail.com">jackpearkes@gmail.com</a>.
+    <p class="note">I am best reached via email at <a href="mailto:jackpearkes@gmail.com">jackpearkes@gmail.com</a>. I am currently available for work.</p>
     <p class="note" id="location">Fetching Jack's <span class="highlight">last known location</span>...</p>
 </div>
