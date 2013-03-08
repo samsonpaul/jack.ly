@@ -134,4 +134,4 @@ if __name__ == '__main__':
     # Bind to PORT if defined in the environment, otherwise default to 5000.
     cache = generate_cache()  # Kicking it new school
     port = os.environ.get('PORT', 5000)
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=port)
