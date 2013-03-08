@@ -15,7 +15,7 @@ value as willing to do anything that needed to be done, and do it to
 the best of my ability.
 
 I was given a chance by [Trickplay](http://www.trickplay.com/), which
-has created a development platform for TV's, running on existing
+has created a development platform for TV's running on existing
 television hardware. I had the incredible opportunity at Trickplay
 of being exposed to intelligent and experienced leaders. During my
 time at Trickplay, I lived in Palo Alto along El Camino Real.
@@ -42,7 +42,7 @@ In Feburary of 2013 I left Kiip to pursue personal development, as well
 as software development, by moving to Berlin, Germany.
 
 I am currently available for web development work. If you're curious
-to some of the projects I've worked on, you can view them [here](/technical-projects).
+about some of the projects I've worked on, you can view them [here](/technical-projects).
 
 I'm on some different places on the Internet which you may want to
 communicate with me through:
