@@ -1,6 +1,5 @@
 body {
-    color: #e2f3e5;
-    background-color: #090d11;
+    color: #666;
     font-size: 14px;
     line-height: 21px;
     font-weight: 300;
@@ -8,25 +7,31 @@ body {
 }
 
 h1 {
-    color: #7abdbb;
+    color: #3E93AC;
     font-weight: 300;
+    line-height: 30px;
 }
 
 h2 {
-    color: #7abdbb;
+    color: #3E93AC;
     font-weight: 300;
 }
 
 a {
-    color: #7abdbb;
+    color: #3E93AC;
+}
+
+blockquote {
+    padding-left: 10px;
+    border-left: 2px #E3E3E3 solid;
 }
 
 .highlight {
-    color: #E8901C;
+    color: #F5630F;
 }
 
 .note {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 a:hover {
@@ -38,8 +43,13 @@ a:active {
 }
 
 .main-content {
-    margin-top: 100px;
+    margin-top: 70px;
 }
+
+.center-content {
+    margin-top: 8px;
+}
+
 .item img {
     float: right;
 }
@@ -53,5 +63,5 @@ a:active {
 
 .menu .active a {
     text-decoration: underline;
-    color: #e2f3e5;
+    color: inherit;
 }

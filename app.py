@@ -29,6 +29,7 @@ def list_sections():
 def list_items(section):
     "Returns a list of items from the filesystem."
     listed_items = glob.glob('sections/%s/*.md' % section)
+    listed_items.sort(reverse=True)
     return listed_items
 
 
@@ -83,6 +84,7 @@ cache = generate_cache()  # Kicking it new school
 def retrieve_sections():
     "Returns an array of all sections and their dicts."
     sections = cache.values()
+    sections.sort()
     return sections
 
 
@@ -99,7 +101,7 @@ def retrieve_item(section, id):
     # Performance concerns with large lists.
     for item in s['items']:
         if item['filename'] == id:
-            return item
+            return item, s
 
 
 @app.route('/')
@@ -123,7 +125,7 @@ def section(section):
 @app.route('/<section>/<item>')
 def item(section, item):
     "Looks up an item based on it's name and section and renders it."
-    item = retrieve_item(section, item)
+    item, section = retrieve_item(section, item)
     if not item:
         abort(404)
     return render_template('item.html', sections=retrieve_sections(),

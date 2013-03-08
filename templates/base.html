@@ -24,11 +24,20 @@
     <div class="container">
         <div class="row main-content">
         {% include "includes/sidebar.html" %}
-
-        {% block content %}
-        {% endblock %}
+            <div class="center-content">
+            {% block content %}
+            {% endblock %}
+            </div>
         </div>
     </div>
+<div class="container">
+    <div class="row">
+        <div class="span3 offset1">
+            <p class="note">Copyright Jack Pearkes. This
+                website, less the content, are available for use on <a href="https://github.com/pearkes/jack.ly">Github</a>.</p>
+        </div>
+    </div>
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/static/js/moment.min.js"></script>
 <script type="text/javascript" src="/static/js/app.js"></script>
