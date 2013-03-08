@@ -22,6 +22,9 @@ def list_sections():
     "Returns a list of sections from the filesystem."
     listed_sections = os.listdir('sections/')
     sections = [s for s in listed_sections if not s.startswith('.')]
+    print sections
+    sections.sort()
+    print sections
     return sections
 
 
@@ -79,7 +82,7 @@ def generate_cache():
 
 def retrieve_sections():
     "Returns an array of all sections and their dicts."
-    sections = list(cache.itervalues())
+    sections = cache.values()
     return sections
 
 

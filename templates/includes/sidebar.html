@@ -6,6 +6,6 @@
         <li class="{% if section['filename'] == request.path.split('/')[1] %}active{% endif %}"><a href="{{ section['path'] }}">{{ section['name'] }}</a></li>
         {% endfor %}
     </ul>
-    <p>I am best reached via email at <a href="mailto:jackpearkes@gmail.com">jackpearkes@gmail.com</a>.
-    <p>The last time I was seen active at a computer was in <a href="http://goo.gl/maps/qgVbc">Berlin, Germany</a>, about 4 hours ago.</p>
+    <p class="note">I am best reached via email at <a href="mailto:jackpearkes@gmail.com">jackpearkes@gmail.com</a>.
+    <p class="note" id="location">Fetching Jack's <span class="highlight">last known location</span>...</p>
 </div>
