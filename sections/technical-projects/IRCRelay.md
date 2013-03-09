@@ -9,7 +9,7 @@ community.
 
 I am responsible for the design and development of the web application for
 marketing and user signups, the API for managing networks and configuration,
-and more. Mitchell and I both contribute to support, and he managed and built
+and more. Mitchell and I both contribute to support, and he manages and built
 the infrastructure to communicate with IRC.
 
 - IRCRelay's [website](https://www.ircrelay.com)
