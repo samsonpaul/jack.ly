@@ -9,7 +9,7 @@ from flask import Flask, render_template, abort
 
 DEFAULT_SECTION = 'about-me'
 
-# Main app and configuration
+# Main app
 app = Flask(__name__)
 
 
@@ -33,11 +33,12 @@ def list_items(section):
     return listed_items
 
 
-def human_name(filename):
+def human_name(filename, title=True):
     "Makes a filename human readable and returns it as a string."
     name = filename.replace('-', ' ')
     name = name.split('.')[0]
-    name = name.title()
+    if title:
+        name = name.title()
     return name
 
 
@@ -69,10 +70,11 @@ def generate_cache():
         # Generate HTML from markdown files.
         for item in items:
             filename = item.split('/')[-1].split('.')[0]
-            item_cache = {'name': human_name(filename),
+            item_cache = {'name': human_name(filename, title=False),
                           'filename': filename,
                           'path': build_path(filename, section),
                           'html': markdown2.markdown_path(item)}
+
             cache[section]['items'].append(item_cache)
 
     print "Cache succesfully generated with %s sections." % len(sections)
