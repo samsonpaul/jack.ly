@@ -6,10 +6,6 @@ It is a simple flask application that uses filesystem storage and
 markdown to maintain content. Upon startup, it renders all of the
 files into html and places them in a dictionary based cache.
 
-This causes slow startup times and higher than normal memory requirements,
-but for simple websites it works great and gives a nice performance bump
-under load.
-
 The backend is designed to be flexible, and uses patterns that may be
 useful to others, but there is also domain specific logic intertwined.
 
@@ -82,4 +78,7 @@ action in an otherwise archival creature.
 
 This is done by using Apple's FindMyiPhone API's and the [findi](https://github.com/pearkes/findi) python
 library that I maintain. The device that it looks for is my computer.
+
+I maitain another service that acts as an API for the Javascript used to
+display the location data.
 
