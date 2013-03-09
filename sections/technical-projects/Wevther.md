@@ -12,4 +12,7 @@ retailers relevant to the weather in your location.
 Wevther was a fun way to demonstrate highly targeted marketing - the
 days of spray and pray advertising are coming to an end.
 
+I developed the Wevther backend for [Jacob Heftmann](http://www.jacobheftmann.com/),
+who designed and created the website.
+
 - Wevther's [homepage](http://wevther.com)
