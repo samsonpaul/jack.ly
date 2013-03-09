@@ -35,7 +35,7 @@ software programs.
 
 Essentially, my experience at Kiip gave me the opportunity to work in an
 vital operations roll in a startup that grew from 4 to 40 people in my time, raised
-3 rounds of venture capital funding totaling $13.2 million dollars and
+3 rounds of venture capital funding totaling $15.3M million dollars and
 opened offices across the world.
 
 In Feburary of 2013 I left Kiip to pursue personal development, as well
