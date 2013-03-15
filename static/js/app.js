@@ -22,6 +22,8 @@ var locationChecker = {
         // We fake a delay otherwise it doesn't seem as fancy.
         if (window.location.pathname === '/') {
             setTimeout(this.makeRequest, 2000)
+        } else {
+            this.makeRequest();
         }
         this.ping()
     },
