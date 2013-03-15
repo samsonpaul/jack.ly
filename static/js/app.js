@@ -14,20 +14,15 @@ $(function(){
 })
 
 function updateLocation(json) {
-    if (json) {
-        var el = $('#location').empty()
-        el.removeClass('highlight')
+    if (!json) return;
+    var tmpl = 'The last time I was seen active at a computer was in <a href = \"{url}\">{location}</a> about {date}.',
+        el   = $('#location').empty().removeClass('highlight');
 
-        var location = json['location']
-        var url = 'https://maps.google.com/maps?q=' + location
-        var date = moment.utc(json['date']).fromNow()
-
-        loc_data = {'location': location, 'url': url, 'date': date}
-
-        var html = "The last time I was seen active at a computer was in <a href=\"{url}\">{location}</a> about {date}.".substitute(loc_data)
-
-        el.append(html)
-    }
+    el.append(tmpl.substitute({
+        'location': json['location'],
+        'url': 'https://maps.google.com/maps?q=' + location,
+        'date': moment.utc(json['date']).fromNow()
+    }));
 }
 
 var locationChecker = {
