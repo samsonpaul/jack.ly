@@ -1,17 +1,30 @@
+(function(){
+
+String.prototype.substitute = function(object, regexp){
+    return String(this).replace(regexp || (/\\?\{([^{}]+)\}/g), function(match, name){
+        if (match.charAt(0) == '\\') return match.slice(1);
+        return (object[name] != null) ? object[name] : '';
+    });
+};
+
+})();
+
 $(function(){
   locationChecker.init()
-  })
+})
 
 function updateLocation(json) {
     if (json) {
         var el = $('#location').empty()
         el.removeClass('highlight')
+
         var location = json['location']
         var url = 'https://maps.google.com/maps?q=' + location
         var date = moment.utc(json['date']).fromNow()
 
-        var link = '<a href="' + url + '">' + location + '</a>'
-        var html = "The last time I was seen active at a computer was in " + link + " about " + date + "."
+        loc_data = {'location': location, 'url': url, 'date': date}
+
+        var html = "The last time I was seen active at a computer was in <a href=\"{url}\">{location}</a> about {date}.".substitute(loc_data)
 
         el.append(html)
     }
