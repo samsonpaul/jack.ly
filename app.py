@@ -7,8 +7,6 @@ import glob
 import markdown2
 from flask import Flask, render_template, abort
 
-DEFAULT_SECTION = 'about-me'
-
 # Main app
 app = Flask(__name__)
 
@@ -18,10 +16,16 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 
+def check_index():
+    "Checks to make sure the index file exists."
+    if not os.path.isfile('sections/index.md'):
+        raise Exception('You must have an index file in sections.')
+
+
 def list_sections():
     "Returns a list of sections from the filesystem."
     listed_sections = os.listdir('sections/')
-    sections = [s for s in listed_sections if not s.startswith('.')]
+    sections = [s for s in listed_sections if not '.' in s]
     sections.sort()
     return sections
 
@@ -57,6 +61,10 @@ def generate_cache():
     # The cache we are building.
     cache = {}
     sections = list_sections()
+
+    # Add the index to the cache.
+    check_index()
+    cache['index'] = {'html': markdown2.markdown_path('sections/index.md')}
 
     for section in sections:
         cache[section] = {'name': human_name(section),
@@ -109,8 +117,8 @@ def retrieve_item(section, id):
 @app.route('/')
 def index():
     "The homepage. Renders a default section."
-    section = retrieve_section(DEFAULT_SECTION)
-    return render_template('section.html', sections=retrieve_sections(),
+    section = retrieve_section('index')
+    return render_template('index.html', sections=retrieve_sections(),
                            section=section)
 
 
@@ -137,4 +145,4 @@ def item(section, item):
 if __name__ == '__main__':
     # Bind to PORT if defined in the environment, otherwise default to 5000.
     port = os.environ.get('PORT', 5000)
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=True)
