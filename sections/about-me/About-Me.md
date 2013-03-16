@@ -51,6 +51,6 @@ communicate with me through:
 - [@pearkes](https://twitter.com/pearkes) on Twitter
 - [Jack Pearkes](https://facebook.com/pearkes) on Facebook
 - [pearkes](https://github.com/pearkes) on GitHub
-- I use [SoundCloud](https://soundcloud.com/pearkes) and [HypeMachine](http://hypem.com/jackpearkes)
+- I use [SoundCloud](https://soundcloud.com/pearkes) and [Hype Machine](http://hypem.com/jackpearkes)
 heavily for music listening
 
