@@ -43,7 +43,7 @@ var locationChecker = {
 
         el.append(tmpl.substitute({
             'location' : json.location,
-            'url'      : 'https://maps.google.com/maps?q=' + window.location,
+            'url'      : 'https://maps.google.com/maps?q=' + json.location,
             'date'     : window.moment.utc(json.date).fromNow()
         }));
     }
