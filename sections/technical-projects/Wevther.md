@@ -1,4 +1,4 @@
-Wevther is a simple application that combines the Svvpply API with
+Wevther is a simple application that combines the Svpply API with
 the weather in the city you're visiting the website from.
 
 It uses a heavily cached version of products from Svpply associated

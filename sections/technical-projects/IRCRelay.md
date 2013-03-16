@@ -1,10 +1,10 @@
 IRCRelay is a business I operate with [Mitchell Hashimoto](https://twitter.com/mitchellh).
 
 IRCRelay is a service that stays connected to your IRC networks while
-you are not, and upon reconectting replays messages that occurred in
+you are not, and upon reconnecting replays messages that occurred in
 channels that you have joined.
 
-IRCRelay is a succesful project that primarily serves the developer
+IRCRelay is a successful project that primarily serves the developer
 community.
 
 I am responsible for the design and development of the web application for

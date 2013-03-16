@@ -38,7 +38,7 @@ vital operations roll in a startup that grew from 4 to 40 people in my time, rai
 3 rounds of venture capital funding totaling $15.3M million dollars and
 opened offices around the world.
 
-In Feburary of 2013 I left Kiip to pursue personal development, as well
+In February of 2013 I left Kiip to pursue personal development, as well
 as software development, by moving to Berlin, Germany.
 
 I am currently available for web development work. If you're curious
@@ -50,7 +50,7 @@ communicate with me through:
 - My email address is [jackpearkes@gmail.com](mailto:jackpearkes@gmail.com)
 - [@pearkes](https://twitter.com/pearkes) on Twitter
 - [Jack Pearkes](https://facebook.com/pearkes) on Facebook
-- [pearkes](https://github.com/pearkes) on Github
+- [pearkes](https://github.com/pearkes) on GitHub
 - I use [SoundCloud](https://soundcloud.com/pearkes) and [HypeMachine](http://hypem.com/jackpearkes)
 heavily for music listening
 
