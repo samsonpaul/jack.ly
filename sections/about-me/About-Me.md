@@ -20,12 +20,12 @@ television hardware. I had the incredible opportunity at Trickplay
 of being exposed to intelligent and experienced leaders. During my
 time at Trickplay, I lived in Palo Alto along El Camino Real.
 
-9 months later I met Brian Wong, a young Canadian who had seemingly
-limitless energy and enthusiasm. This was a strong contrast to my previous
+Nine months after arriving in Silicon Valley I met Brian Wong, a young Canadian
+who had seemingly limitless energy and enthusiasm. This was a strong contrast to my previous
 work, and I was very attracted to the youthful, though inexperienced,
 leadership. After speaking with the other founders of the company, I
 started at [Kiip](http://kiip.me) as the first non-technical
-employee.
+employee and moved from Palo Alto to San Francisco.
 
 I was exposed to more than I could imagine at Kiip. My responsibilities
 ranged from finding office space to doing front line business development
@@ -36,7 +36,7 @@ software programs.
 Essentially, my experience at Kiip gave me the opportunity to work in an
 vital operations roll in a startup that grew from 4 to 40 people in my time, raised
 3 rounds of venture capital funding totaling $15.3M million dollars and
-opened offices across the world.
+opened offices around the world.
 
 In Feburary of 2013 I left Kiip to pursue personal development, as well
 as software development, by moving to Berlin, Germany.
