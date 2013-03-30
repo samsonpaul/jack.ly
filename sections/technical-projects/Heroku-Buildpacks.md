@@ -16,4 +16,4 @@ I maintain several buildpacks.
 - [heroku-buildpack-static](https://github.com/pearkes/heroku-buildpack-static)
 - [heroku-buildpack-pelican](https://github.com/pearkes/heroku-buildpack-pelican)
 - More about [Heroku Buildpacks]()
-- A [post](http://localhost:4000/post/gostatic-buildpack-for-heroku/) about the gostatic buildpack
+- A [post](http://pretengineer.com/post/gostatic-buildpack-for-heroku/) about the gostatic buildpack
