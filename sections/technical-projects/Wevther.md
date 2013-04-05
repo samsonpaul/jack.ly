@@ -6,7 +6,7 @@ with specific weather conditions, and upon determining your location
 through the HMTL5 browser location API or a zip code, connects the local
 condition in your city with a set of clothing that fit the weather.
 
-In practice, this allows you to discover cloths for purchase through
+In practice, this allows you to discover clothes for purchase through
 retailers relevant to the weather in your location.
 
 Wevther was a fun way to demonstrate highly targeted marketing - the
