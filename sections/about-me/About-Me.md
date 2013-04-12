@@ -1,9 +1,4 @@
-One of the best questions to ask someone when you first meet them is:
-"Where are you from?", and likewise, "Who are your people?". We are
-defined in many ways by the geography and social experience that
-surrounds us as we grow.
-
-My geography started with high mountain walls in [Nelson, Canada](http://en.wikipedia.org/wiki/Nelson,_British_Columbia).
+My geography began with high mountain walls in [Nelson, Canada](http://en.wikipedia.org/wiki/Nelson,_British_Columbia).
 Nelson is a small town of 10,000 people in the south-eastern corner of British
 Columbia. It has a strong arts culture and attracts many affluent people
 from across Canada and other parts of the world. Nelson supports forestry
