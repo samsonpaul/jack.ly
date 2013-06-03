@@ -122,6 +122,7 @@ def retrieve_item(section, id):
     for item in s['items']:
         if item['filename'] == id:
             return item, s
+    return None, None
 
 
 @app.route('/')
