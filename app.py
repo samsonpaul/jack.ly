@@ -37,25 +37,23 @@ def list_items(section):
     return listed_items
 
 
-def human_name(filename, title=True, sorted=False):
+def human_name(filename, title=True):
     "Makes a filename human readable and returns it as a string."
-    parts = filename.split('-')
-    if sorted:
-        # Remove the manually defined order.
-        parts = [p for p in parts if p != parts[0]]
-    name = ' '.join(parts)
+    name = filename.replace('-', ' ')
     name = name.split('.')[0]
+    if '_' in name:
+        name = name.split('_')[-1]
     if title:
         name = name.title()
     return name
 
 
-def build_path(filename, section=None):
+def build_path(slug, section=None):
     "Makes a path relative and returns it as a string."
     if section:
-        path = "/%s/%s" % (section, filename)
+        path = "/%s/%s" % (section, slug)
     else:
-        path = "/%s" % (filename)
+        path = "/%s" % (slug)
     return path
 
 
@@ -79,18 +77,14 @@ def generate_cache():
         # Get all the items for each section.
         items = list_items(section)
 
-        if section == "technical-projects":
-            manual_sort = True
-        else:
-            manual_sort = False
-            items.sort(reverse=True)
-
         # Generate HTML from markdown files.
         for item in items:
             filename = item.split('/')[-1].split('.')[0]
-            item_cache = {'name': human_name(filename, title=False, sorted=manual_sort),
+            slug = filename.split("_")[-1].lower()
+            item_cache = {'name': human_name(filename, title=False),
                           'filename': filename,
-                          'path': build_path(filename, section),
+                          'slug': slug,
+                          'path': build_path(slug, section),
                           'html': markdown2.markdown_path(item)}
 
             cache[section]['items'].append(item_cache)
@@ -120,7 +114,7 @@ def retrieve_item(section, id):
         return
     # Performance concerns with large lists.
     for item in s['items']:
-        if item['filename'] == id:
+        if item['slug'] == id:
             return item, s
     return None, None
 
