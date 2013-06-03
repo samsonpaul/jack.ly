@@ -33,13 +33,16 @@ def list_sections():
 def list_items(section):
     "Returns a list of items from the filesystem."
     listed_items = glob.glob('sections/%s/*.md' % section)
-    listed_items.sort(reverse=True)
     return listed_items
 
 
-def human_name(filename, title=True):
+def human_name(filename, title=True, sorted=False):
     "Makes a filename human readable and returns it as a string."
-    name = filename.replace('-', ' ')
+    parts = filename.split('-')
+    if sorted:
+        # Remove the manually defined order.
+        parts = [p for p in parts if p != parts[0]]
+    name = ' '.join(parts)
     name = name.split('.')[0]
     if title:
         name = name.title()
@@ -75,10 +78,16 @@ def generate_cache():
         # Get all the items for each section.
         items = list_items(section)
 
+        if section == "technical-projects":
+            manual_sort = True
+        else:
+            manual_sort = False
+            items.sort(reverse=True)
+
         # Generate HTML from markdown files.
         for item in items:
             filename = item.split('/')[-1].split('.')[0]
-            item_cache = {'name': human_name(filename, title=False),
+            item_cache = {'name': human_name(filename, title=False, sorted=manual_sort),
                           'filename': filename,
                           'path': build_path(filename, section),
                           'html': markdown2.markdown_path(item)}
