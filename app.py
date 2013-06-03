@@ -33,6 +33,7 @@ def list_sections():
 def list_items(section):
     "Returns a list of items from the filesystem."
     listed_items = glob.glob('sections/%s/*.md' % section)
+    listed_items.sort()
     return listed_items
 
 
