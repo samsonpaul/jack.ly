@@ -77,6 +77,10 @@ def generate_cache():
         # Get all the items for each section.
         items = list_items(section)
 
+        # Journal entries should be sorted in reverse
+        if section == 'journal-excerpts':
+            items.sort(reverse=True)
+
         # Generate HTML from markdown files.
         for item in items:
             filename = item.split('/')[-1].split('.')[0]
