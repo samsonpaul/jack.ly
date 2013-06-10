@@ -115,7 +115,7 @@ def retrieve_item(section, id):
     "Returns an item we grabbed from the cache."
     s = retrieve_section(section)
     if not s:
-        return
+        return None, None
     # Performance concerns with large lists.
     for item in s['items']:
         if item['slug'] == id:
@@ -145,7 +145,7 @@ def section(section):
 def item(section, item):
     "Looks up an item based on it's name and section and renders it."
     item, section = retrieve_item(section, item)
-    if not item:
+    if not item or not section:
         abort(404)
     return render_template('item.html', sections=retrieve_sections(),
                            section=section, item=item)
