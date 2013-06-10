@@ -1,4 +1,4 @@
-Gethub is a command line tool utility for cloning and fetching your remote git repositories from GitHub.
+Gethub is a command line utility for cloning and fetching your remote git repositories from GitHub.
 
 Git is a popular version control system used be developers to
 track changes to their projects. GitHub is a popular Git hosting
