@@ -10,5 +10,5 @@ to think about while waiting for a task to finish.
 
 - The documentation for ponder is on it's [homepage](http://ponder.jack.ly)
 
-**Edit: I've been [made aware](https://twitter.com/paddycarey/status/354620831256686594) that [fortune](http://en.wikipedia.org/wiki/Fortune_(Unix))
-is far superior. It's replaced Ponder for me. I'll keep it live and thinking, though.**
+*Edit: I've been [made aware](https://twitter.com/paddycarey/status/354620831256686594) that [fortune](http://en.wikipedia.org/wiki/Fortune_%28Unix%29)
+is far superior. It's replaced Ponder for me. I'll keep it live and thinking, though.*
