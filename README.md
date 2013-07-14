@@ -1,7 +1,5 @@
 ## jack.ly
 
-This is the repository for [jack.ly](http://jack.ly), my personal website.
-
 It seems like a right of passage to build yourself a custom, potentially (likely) 
 over-engineered personal website. This is mine.
 
