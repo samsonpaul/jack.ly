@@ -2,6 +2,11 @@
 
 This is the repository for [jack.ly](http://jack.ly), my personal website.
 
+It seems like a right of passage to build yourself a custom, potentially (likely) 
+over-engineered personal website. This is mine.
+
+## Overview
+
 It is a simple flask application that uses filesystem storage and
 markdown to maintain content. Upon startup, it renders all of the
 files into html and places them in a dictionary based cache.
