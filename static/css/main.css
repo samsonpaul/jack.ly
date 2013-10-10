@@ -2,6 +2,10 @@
     color: #08d8b2;
 }
 
+.spacer {
+    min-height: 15px;
+}
+
 .muted {
     color: #888;
 }
