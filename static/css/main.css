@@ -6,6 +6,11 @@
     min-height: 15px;
 }
 
+code {
+    overflow: auto;
+    display: block;
+}
+
 .muted {
     color: #888;
 }
