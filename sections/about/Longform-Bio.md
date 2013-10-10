@@ -55,7 +55,7 @@ heavily for music listening
 
 For sensitive matters, you can use my [PGP key](/static/pgp.pub.txt).
 
-`CAEF EC63 11A9 0936 D2C5 3EA9 4FEF F066 DDE6 3A8C`
+    CAEF EC63 11A9 0936 D2C5 3EA9 4FEF F066 DDE6 3A8C
 
 <small>*You can also [get the key](https://raw.github.com/pearkes/jack.ly/master/static/pgp.pub.txt)
 from the source of this website over an SSL connection if MITM really
