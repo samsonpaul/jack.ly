@@ -1,3 +1,7 @@
+Here's a picture of me and my friend Michael at the beach. I'm on the right.
+
+<img title="Jack and Michael at da Beach" src="/static/img/jack-michael-da-beach.jpg" class="img-responsive">
+
 My geography began with high mountain walls in [Nelson, Canada](http://en.wikipedia.org/wiki/Nelson,_British_Columbia).
 Nelson is a small town of 10,000 people in the south-eastern corner of British
 Columbia. It has a strong arts culture and attracts many affluent people
@@ -53,6 +57,6 @@ For sensitive matters, you can use my [PGP key](/static/pgp.pub.txt).
 
 `CAEF EC63 11A9 0936 D2C5 3EA9 4FEF F066 DDE6 3A8C`
 
-*You can also [get the key](https://raw.github.com/pearkes/jack.ly/master/static/pgp.pub.txt)
+<small>*You can also [get the key](https://raw.github.com/pearkes/jack.ly/master/static/pgp.pub.txt)
 from the source of this website over an SSL connection if MITM really
-gets your jimmies in a bunch.*
+gets your jimmies in a bunch.*</small>

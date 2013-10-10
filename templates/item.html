@@ -1,9 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="span6">
-    <div class="span6 item">
-        <h2><a href="{{ item['path'] }}">{{ item['name'] }}</a></h2>
-        {{ item['html'] | safe}}
-    </div>
-</div>
+<h4>{{ item['name'] }}</h4>
+{{ item['html'] | safe}}
 {% endblock %}
