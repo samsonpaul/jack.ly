@@ -10,7 +10,7 @@ An abridged list of things I've made or contribute to:
 
 - I co-run [IRCRelay](https://www.ircrelay.com)
 - I maintain a pretty popular RubyGem called [Tugboat](https://github.com/pearkes/tugboat)
-- Me and a friend, Jacob, recently built [Wevther](http://wevther.com) and [Small Victories](https://smallvictori.es)
+- With a friend, Jacob, I recently built [Wevther](http://wevther.com) and [Small Victories](https://smallvictori.es)
 - I write about various things, like [Matisse and Programming](http://pretengineer.com/post/in-search-of-true-process/), or [Packer, Vagrant and your Infrastructure](http://pretengineer.com/post/packer-vagrant-infra/)
 - I contribute to [Packer](http://packer.io)
 
