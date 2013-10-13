@@ -1,4 +1,4 @@
-Here's a picture of me and my friend Michael at the beach. I'm on the right.
+Here's a picture of me (r.) and my friend Michael at the beach.
 
 <img title="Jack and Michael at da Beach" src="/static/img/jack-michael-da-beach.jpg" class="img-responsive">
 
