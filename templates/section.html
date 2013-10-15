@@ -2,8 +2,9 @@
 {% block content %}
 {% for item in section['items'] %}
 <div class="section">
-    <h4><a href="{{ item['path'] }}">//</a> {{ item['name'] }}</h4>
+    <h4>{{ item['name'] }}</h4>
 {{ item['html'] | safe}}
+<hr>
 </div>
 {% endfor %}
 {% endblock %}

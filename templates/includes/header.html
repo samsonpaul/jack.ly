@@ -1,9 +1,9 @@
 <header>
     {% if section.get('filename') %}
-    <h1><a class="title-link" href="/"><span class="bars">//</span><span class="muted"> Jack Pearkes</a> /</span> {{ section['name'] }}</h1>
+    <h1><span class="muted">Jack Pearkes /</span> {{ section['name'] }}</h1>
     {% else %}
-    <h1><a class="title-link" href-"/"><span class="bars">//</span> Jack Pearkes</a></h1>
+    <h1>Jack Pearkes</h1>
     {% endif %}
-    <div class="location-note"><span id="location"><span class="muted">Finding Jack's last known location...</span></span></div>
+    <div class="location-note"><span id="location" class="muted">Finding Jack's last known location...</span></div>
     <div class="visible-xs spacer"></div>
 </header>
