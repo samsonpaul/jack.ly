@@ -38,7 +38,7 @@ var locationChecker = {
 
     updateLocation: function(json){
         if (!json) return;
-        var tmpl = 'The last time I was seen active at a computer was in <a href = \"{url}\">{location}</a> about {date}. <a href="http://pretengineer.com/post/tracking-iphone-location/">?</a>',
+        var tmpl = 'The last time I was seen active at a computer was in <a href = \"{url}\">{location}</a> about {date}.',
             el   = $('#location').empty().removeClass('highlight');
 
         el.append(tmpl.substitute({
