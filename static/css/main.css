@@ -1,3 +1,8 @@
+body {
+    -webkit-font-smoothing:antialiased;
+}
+
+
 .bars {
     color: #08d8b2;
 }
