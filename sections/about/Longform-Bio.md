@@ -21,12 +21,12 @@ time at Trickplay, I lived in Palo Alto along El Camino Real.
 
 Nine months after arriving in Silicon Valley I met Brian Wong, a young Canadian
 who had seemingly limitless energy and enthusiasm. This was a strong contrast to my previous
-work, and I was very attracted to the youthful, though inexperienced,
+work, and I was very attracted to the youthful – though inexperienced –
 leadership. After speaking with the other founders of the company, I
 started at [Kiip](http://kiip.me) as the first non-technical
 employee and moved from Palo Alto to San Francisco.
 
-I was exposed to more than I could imagine at Kiip. My responsibilities
+I saw more than I could imagine at Kiip. My responsibilities
 ranged from finding office space to doing front line business development
 work. As I grew within the company I became close friends with a few of
 the developers, who inspired me and tutored me in learning how to engineer
@@ -40,8 +40,17 @@ opened offices around the world.
 In February of 2013 I left Kiip to pursue personal development, as well
 as software development, by moving to Berlin, Germany.
 
-I am currently available for web development work. If you're curious
-about some of the projects I've worked on, you can view them [here](/technical-projects).
+I spent close to a year in Berlin working primarily for American
+and German companies, with a focus on application development and system operations.
+
+During my time there, I was lucky to travel throughout Europe and
+experience the privileged freedom of movement that comes with software
+development. In early 2014, my longtime friends and mentors (mentioned previously
+during my time at Kiip) hired me to work at [HashiCorp](http://www.hashicorp.com)
+and I moved to New York City.
+
+I now spend the majority of my time in Manhattan working for HashiCorp.
+We make software for those that make – yup – software.
 
 I'm on some different places on the Internet which you may want to
 communicate with me through:
@@ -50,8 +59,6 @@ communicate with me through:
 - [@pearkes](https://twitter.com/pearkes) on Twitter
 - [Jack Pearkes](https://facebook.com/pearkes) on Facebook
 - [pearkes](https://github.com/pearkes) on GitHub
-- I use [SoundCloud](https://soundcloud.com/pearkes) and [Hype Machine](http://hypem.com/jackpearkes)
-heavily for music listening
 
 For sensitive matters, you can use my [PGP key](/static/pgp.pub.txt).
 
