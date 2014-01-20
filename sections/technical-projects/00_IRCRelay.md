@@ -1,15 +1,19 @@
-IRCRelay is a business I operate with [Mitchell Hashimoto](https://twitter.com/mitchellh).
+IRCRelay is a business that I ran with [Mitchell Hashimoto](https://twitter.com/mitchellh).
 
-IRCRelay is a service that stays connected to your IRC networks while
-you are not, and upon reconnecting replays messages that occurred in
-channels that you have joined.
+IRCRelay was a service that stayed connected to your IRC networks while
+you were not, and upon reconnecting replayed messages that occurred in
+channels that you had joined.
 
-IRCRelay is a successful project that primarily serves the developer
+IRCRelay was a successful project that primarily served the developer
 community.
 
-I am responsible for the design and development of the web application for
+I was responsible for the design and development of the web application for
 marketing and user signups, the API for managing networks and configuration,
-and more. Mitchell and I both contribute to support, and he manages and built
+and more. Mitchell and I both contributed to support, and he managed and built
 the infrastructure to communicate with IRC.
+
+IRCRelay shut down in early 2014 so Mitchell and I could focus on other
+endeavors. It was a hard decision to make and a lot was learned about
+SaaS and the modern state of software services in the process.
 
 - IRCRelay's [website](https://www.ircrelay.com)
