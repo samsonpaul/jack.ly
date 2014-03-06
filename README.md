@@ -1,6 +1,6 @@
 ## jack.ly
 
-It seems like a right of passage to build yourself a custom, potentially (likely) 
+It seems like a right of passage to build yourself a custom, potentially (likely)
 over-engineered personal website. This is mine.
 
 ## Overview
@@ -84,4 +84,3 @@ library that I maintain. The device that it looks for is my computer.
 
 I maitain another service that acts as an API for the Javascript used to
 display the location data.
-
