@@ -1,7 +1,7 @@
 I am a software developer at [HashiCorp](http://www.hashicorp.com/).
 
-We make and support [Vagrant](http://www.vagrantup.com), the open source
-development tool used by businesses and hobbyists all over the world.
+We make and support [software tools](https://hashicorp.com/products)
+used by businesses and hobbyists all over the world.
 
 ---
 
