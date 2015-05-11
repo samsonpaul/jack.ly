@@ -22,7 +22,12 @@ hr {
 
 a {
     color: #004FB8;
+    text-decoration: underline;
 }
+a:hover {
+    color: #004FB8;
+}
+
 
 p strong {
     font-weight: 400;
