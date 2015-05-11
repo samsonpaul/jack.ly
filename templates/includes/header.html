@@ -1,9 +1,5 @@
 <header>
-    {% if section.get('filename') %}
-    <h1>{{ section['name'] }}</h1>
-    {% else %}
-    <h1>Jack Pearkes</h1>
+    {% if not section.get('filename') %}
+    <h2>Jack Pearkes</h2>
     {% endif %}
-    <!-- <div class="location-note"><span id="location" class="muted">Finding Jack's last known location...</span></div>
-    <div class="spacer"></div> -->
 </header>

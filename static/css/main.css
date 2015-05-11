@@ -1,95 +1,142 @@
 body {
-    -webkit-font-smoothing:antialiased;
+  font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #282828;
 }
 
-
-.bars {
-    color: #282828;
-}
-
-
-hr {
-    border-color: #282828;
-}
-
-.spacer {
-    min-height: 15px;
-}
-
-.muted {
-    color: #888;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 a {
-    color: #004FB8;
-    text-decoration: underline;
-}
-a:hover {
-    color: #004FB8;
+  color: #004FB8;
 }
 
-
-p strong {
-    font-weight: 400;
-    background-color: #fde6dd;
+code {
+  font-size: 17px;
 }
 
-li {
-    list-style-type: square;
+pre, pre > code {
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 18px;
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  display: block;
+  overflow: auto;
 }
 
-.title-link {
-    color: inherit;
+.expanded, .expanded > code {
+  max-width: none;
+  width: 100%;
 }
 
-.title-link:hover {
-    text-decoration: none;
+img {
+  width: auto;
+  max-width: 100%;
 }
 
-.bars {
-    text-decoration: none;
-    cursor: pointer;
+.content .img-center {
+  text-align: center;
 }
 
-header {
-    min-height: 50px;
-}
-
-.section {
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 28px;
-    font-weight: 300;
-    font-style: normal;
-}
-
-header p {
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 300;
-}
-
-blockquote p {
-    font-weight: 300;
-    font-size: 15px;
+ol, ul {
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
-.location-note {
-    font-size: 12px;
-    color:
+.dark {
+  color: inherit;
 }
 
-body {
-    color: #282828;
-    font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.7;
-    font-size: 18px;
+footer {
+  margin-top: 10px;
+}
+
+.footnotes {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.footnotes p {
+  margin-bottom: 5px;
+}
+
+.footnotes ol {
+  padding-left: 20px;
+}
+
+h1, h2, h3, h4, h4 {
+  font-weight: 500;
+}
+
+h4.no-border {
+  border: none;
+  margin-bottom: 0;
+}
+
+p.no-top {
+  margin-top: 0px;
+}
+
+blockquote p {
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.post h2, h3, h4, h4 {
+  margin-top: 40px;
+}
+
+h3, h4, hr {
+  border: 1px solid #282828;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  padding-bottom: 4px;
+}
+
+h3.post-title {
+  margin-bottom: 0px;
+}
+
+.summary {
+  text-align: center;
+  font-style: italic;
+  border: 2px solid #282828;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 10px;
+  margin: 5px 0px 30px 0px;
+}
+
+.date {
+  font-size: 13px;
+}
+
+.discussion {
+  font-size: 15px;
+}
+
+.author-list {
+  font-style: normal;
+}
+
+.draft {
+  font-size: 20px;
+  background-color: yellow;
+  text-align: center;
 }
