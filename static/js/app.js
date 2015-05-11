@@ -50,7 +50,7 @@ var locationChecker = {
 };
 
 $(function(){
-    locationChecker.init();
+    // locationChecker.init();
 });
 
 })();
