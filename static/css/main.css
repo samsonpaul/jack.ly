@@ -4,7 +4,12 @@ body {
 
 
 .bars {
-    color: #08d8b2;
+    color: #282828;
+}
+
+
+hr {
+    border-color: #282828;
 }
 
 .spacer {
@@ -16,11 +21,7 @@ body {
 }
 
 a {
-    color: #07c8a5;
-}
-
-a:hover {
-    color: #035546;
+    color: #004FB8;
 }
 
 p strong {
@@ -59,10 +60,8 @@ header {
 
 header h1 {
     font-size: 28px;
-    font-family: 'Verlag A', 'Verlag B';
     font-weight: 300;
     font-style: normal;
-    color: #4c4c4c;
 }
 
 header p {
@@ -86,10 +85,10 @@ p {
 }
 
 body {
-    color: #111;
-    font-family: 'Gotham SSm A', 'Gotham SSm B';
+    color: #282828;
+    font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 26px;
-    font-size: 16px;
+    line-height: 1.7;
+    font-size: 18px;
 }
