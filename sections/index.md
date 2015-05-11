@@ -13,7 +13,7 @@ focusing on application development and system operations.
 In the past, I've lived in Berlin, San Francisco, New York and British Columbia, but
 I am now located in Los Angeles.
 
-If you'd like to discuss or learn about Vagrant, Packer, or HashiCorp,
+If you'd like to discuss or learn about HashiCorp,
 please email me at [jackpearkes@gmail.com](mailto:jackpearkes@gmail.com).
 
 - More [about me](/about/longform-bio)
