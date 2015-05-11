@@ -33,10 +33,6 @@ li {
     list-style-type: square;
 }
 
-a:active {
-    color: #035546;
-}
-
 .title-link {
     color: inherit;
 }
