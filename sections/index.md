@@ -1,19 +1,15 @@
-I am a software developer at [HashiCorp](https://hashicorp.com/).
+<div class="center-wrap">
+    <div class="center-frame">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/bUwu5CiESbc?rel=0&amp;controls=0&amp;showinfo=0&amp;t=18" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
 
-We make and support software tools used by businesses and
-hobbyists all over the world.
+I am a product person at HashiCorp, which means I work on engineering
+and design problems.
 
-I have a bit of a blog at [pretengineer.com](http://pretengineer.com).
+I am from Canada; lived in Berlin, NY and SF and am now located in Venice, CA.
 
----
+🌴🏄
 
-Prior to HashiCorp, I worked as an independent software consultant
-focusing on application development and system operations.
+My email is jackpearkes@gmail.com
 
-In the past, I've lived in Berlin, San Francisco, New York and British Columbia, but
-I am now located in Los Angeles.
-
-If you'd like to discuss or learn about HashiCorp,
-please email me at [jackpearkes@gmail.com](mailto:jackpearkes@gmail.com).
-
-- More [about me](/about/longform-bio)
