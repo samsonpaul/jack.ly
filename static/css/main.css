@@ -17,6 +17,11 @@ a {
   color: #004FB8;
 }
 
+a.no-style {
+  text-decoration: none;
+  color: inherit;
+}
+
 code {
   font-size: 17px;
 }

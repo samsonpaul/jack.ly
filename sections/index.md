@@ -13,4 +13,4 @@ I am from Canada; lived in Berlin, NY and SF and am now located in Venice, CA.
 
 My email is jackpearkes@gmail.com
 
-<a href="https://en.wikipedia.org/wiki/Metaverse">🚀</a>
+<a class="no-style" href="https://en.wikipedia.org/wiki/Metaverse">🚀</a>
