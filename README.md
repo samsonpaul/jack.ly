@@ -82,5 +82,5 @@ action in an otherwise archival creature.
 This is done by using Apple's FindMyiPhone API's and the [findi](https://github.com/pearkes/findi) python
 library that I maintain. The device that it looks for is my computer.
 
-I maitain another service that acts as an API for the Javascript used to
+I maintain another service that acts as an API for the Javascript used to
 display the location data.
